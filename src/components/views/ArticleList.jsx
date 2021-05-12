@@ -4,7 +4,7 @@ import style from './ArticleList.css';
 import Article from './Article';
 
 const ArticleList = ({ articles }) => (
-	<ul className={style.articleList}>
+	<ul className={style.articleList} aria-label="article-list">
 		{articles.map(article => (
 			<li key={`${article.title}-${article.author}`}>
 				<Article 
@@ -17,7 +17,7 @@ const ArticleList = ({ articles }) => (
 	</ul>
 );
 
-ArticleList.PropTypes = {
+ArticleList.propTypes = {
 	articles: PropTypes.arrayOf(
 		PropTypes.shape({
 			title: PropTypes.string.isRequired,

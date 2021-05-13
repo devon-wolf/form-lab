@@ -7,7 +7,7 @@ import { fetchNews } from '../services/fetchNews';
 export default class NewsSearch extends Component {
 	state = {
 		loading: false,
-		articles: null
+		articles: []
 	}
 
 	componentDidMount = async () => {
@@ -22,23 +22,19 @@ export default class NewsSearch extends Component {
 	}
 
 	render() {
-		console.log(this.state);
+		const { loading, articles } = this.state;
 		return (
 			<div className={style.newsSearch}>
 				<Search
 					handleSearchInput={() => {}}
 					handleFormSubmit={() => {}}
 				/>
-
-				<p>Loading...</p>
-
-				<ArticleList 
-					articles={[{
-						title: 'Test Article',
-						author: 'me',
-						description: 'this is only a test'
-					}]}
-				/>
+				{loading
+					? 	<p>Loading...</p>
+					: 	<ArticleList 
+							articles={articles}
+						/>
+				}
 			</div>
 		)
 	}

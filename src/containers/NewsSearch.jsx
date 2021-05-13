@@ -24,6 +24,17 @@ export default class NewsSearch extends Component {
 
 	handleSearchInput = e => this.setState({ searchParams: e.target.value });
 
+	searchOnSubmit = async e => {
+		e.preventDefault();
+		this.setState({ loading: true });
+		const newArticles = await fetchNews(this.state.searchParams);
+		this.setState({
+			loading: false,
+			articles: newArticles,
+			searchParams: ''
+		});
+	}
+
 	render() {
 		console.log(this.state.searchParams);
 		const { loading, articles, searchParams } = this.state;
@@ -31,7 +42,7 @@ export default class NewsSearch extends Component {
 			<div className={style.newsSearch}>
 				<Search
 					handleSearchInput={this.handleSearchInput}
-					handleFormSubmit={() => {}}
+					handleFormSubmit={this.searchOnSubmit}
 					inputValue={searchParams}
 				/>
 				{loading

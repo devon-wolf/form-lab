@@ -10,18 +10,24 @@ describe('News search component', () => {
     render(<NewsSearch />);
 	screen.getByText('Loading...');
 	
-	const articleList = await screen.findByRole('list', { name: 'article-list' });
-
-	expect(articleList).not.toBeEmptyDOMElement();
-	
 	const searchInput = screen.getByRole('textbox', { name: 'search-input' });
 
 	const submitButton = screen.getByRole('button', { name: 'form-submit' });
 
 	const searchForm = screen.getByRole('form', { name: 'article-search' });
 
-	// userEvent.type(searchInput, 'Alli');
-	// userEvent.click(submitButton);
+	const articleList = await screen.findByRole('list', { name: 'article-list' });
+
+	expect(articleList).toMatchSnapshot();
+
+	userEvent.type(searchInput, 'Alli');
+	userEvent.click(submitButton);
+
+	return waitFor(async () => {
+		const searchList = await screen.findByRole('list', { name: 'article-list' });
+
+		expect(searchList.childElementCount).toEqual(1);
+	});
 
   });
 

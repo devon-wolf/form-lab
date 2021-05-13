@@ -15,8 +15,6 @@ describe('News search component', () => {
 
 	const searchForm = screen.getByRole('form', { name: 'article-search' });
 	
-	
-
 	const articleList = await screen.findByRole('list', { name: 'article-list' });
 
 	expect(articleList).not.toBeEmptyDOMElement();

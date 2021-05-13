@@ -282,3 +282,29 @@ exports[`News search component renders news search page 1`] = `
   </li>
 </ul>
 `;
+
+exports[`News search component renders news search page 2`] = `
+<button
+  aria-label="form-submit"
+>
+  Search
+</button>
+`;
+
+exports[`News search component renders news search page 3`] = `
+<form
+  aria-label="article-search"
+  class="searchForm"
+>
+  <input
+    aria-label="search-input"
+    placeholder="Enter search terms"
+    value=""
+  />
+  <button
+    aria-label="form-submit"
+  >
+    Search
+  </button>
+</form>
+`;

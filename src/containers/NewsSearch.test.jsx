@@ -19,6 +19,8 @@ describe('News search component', () => {
 	const articleList = await screen.findByRole('list', { name: 'article-list' });
 
 	expect(articleList).toMatchSnapshot();
+	expect(submitButton).toMatchSnapshot();
+	expect(searchForm).toMatchSnapshot();
 
 	userEvent.type(searchInput, 'Alli');
 	userEvent.click(submitButton);

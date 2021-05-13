@@ -36,7 +36,6 @@ export default class NewsSearch extends Component {
 	}
 
 	render() {
-		console.log(this.state.searchParams);
 		const { loading, articles, searchParams } = this.state;
 		return (
 			<div className={style.newsSearch}>

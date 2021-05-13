@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import style from './Search.css';
 
-const Search = ({ handleSearchInput, handleFormSubmit }) => (
+const Search = ({ handleSearchInput, handleFormSubmit, inputValue }) => (
 	<form
 		aria-label="article-search"
 		className={style.searchForm}
@@ -11,6 +11,7 @@ const Search = ({ handleSearchInput, handleFormSubmit }) => (
 		<input 
 			placeholder="Enter search terms"
 			aria-label="search-input"
+			value={inputValue}
 			onInput={handleSearchInput}
 		/>
 		
@@ -23,7 +24,8 @@ const Search = ({ handleSearchInput, handleFormSubmit }) => (
 
 Search.propTypes = {
 	handleSearchInput: PropTypes.func.isRequired,
-	handleFormSubmit: PropTypes.func.isRequired
+	handleFormSubmit: PropTypes.func.isRequired,
+	inputValue: PropTypes.string.isRequired
 };
 
 export default Search;

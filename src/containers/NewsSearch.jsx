@@ -7,7 +7,8 @@ import { fetchNews } from '../services/fetchNews';
 export default class NewsSearch extends Component {
 	state = {
 		loading: false,
-		articles: []
+		articles: [],
+		searchParams: ''
 	}
 
 	componentDidMount = async () => {
@@ -21,13 +22,17 @@ export default class NewsSearch extends Component {
 		});
 	}
 
+	handleSearchInput = e => this.setState({ searchParams: e.target.value });
+
 	render() {
-		const { loading, articles } = this.state;
+		console.log(this.state.searchParams);
+		const { loading, articles, searchParams } = this.state;
 		return (
 			<div className={style.newsSearch}>
 				<Search
-					handleSearchInput={() => {}}
+					handleSearchInput={this.handleSearchInput}
 					handleFormSubmit={() => {}}
+					inputValue={searchParams}
 				/>
 				{loading
 					? 	<p>Loading...</p>

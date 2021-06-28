@@ -1,0 +1,310 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`News search component renders news search page 1`] = `
+<ul
+  aria-label="article-list"
+  class="articleList"
+>
+  <li>
+    <h3>
+      aye aye
+    </h3>
+    <p>
+      Admiral
+    </p>
+    <p>
+      Only quitters give up.
+    </p>
+  </li>
+  <li>
+    <h3>
+      sidekick
+    </h3>
+    <p>
+      Agent S
+    </p>
+    <p>
+      You gotta put the pedal to the metal!
+    </p>
+  </li>
+  <li>
+    <h3>
+      snuffle
+    </h3>
+    <p>
+      Agnes
+    </p>
+    <p>
+      You reap what you sow.
+    </p>
+  </li>
+  <li>
+    <h3>
+      hoo hoo ha CFayyyeee NH
+    </h3>
+    <p>
+      Al
+    </p>
+    <p>
+      Life is a buffet--Always go back for seconds.
+    </p>
+  </li>
+  <li>
+    <h3>
+      it'sa me
+    </h3>
+    <p>
+      Alfonso
+    </p>
+    <p>
+      Slow and steady wins the race.
+    </p>
+  </li>
+  <li>
+    <h3>
+      guvnor
+    </h3>
+    <p>
+      Alice
+    </p>
+    <p>
+      Treat others as you would like to be treated.
+    </p>
+  </li>
+  <li>
+    <h3>
+      me meow
+    </h3>
+    <p>
+      Ankha
+    </p>
+    <p>
+      All that glitters is not gold.
+    </p>
+  </li>
+  <li>
+    <h3>
+      macmoo
+    </h3>
+    <p>
+      Angus
+    </p>
+    <p>
+      Even strong men cry.
+    </p>
+  </li>
+  <li>
+    <h3>
+      graaagh
+    </h3>
+    <p>
+      Alli
+    </p>
+    <p>
+      Think before you act.
+    </p>
+  </li>
+  <li>
+    <h3>
+      cannoli
+    </h3>
+    <p>
+      Anicotti
+    </p>
+    <p>
+      The walls have ears!
+    </p>
+  </li>
+  <li>
+    <h3>
+      "eaglet" (GCN)"cuz"(WW & CF & NL)
+    </h3>
+    <p>
+      Amelia
+    </p>
+    <p>
+      Pampering yourself is as important as food, water, and shelter!
+    </p>
+  </li>
+  <li>
+    <h3>
+      gumdrop
+    </h3>
+    <p>
+      Annalisa
+    </p>
+    <p>
+      Home is where the heart is.
+    </p>
+  </li>
+  <li>
+    <h3>
+      honk
+    </h3>
+    <p>
+      Antonio
+    </p>
+    <p>
+      Always go for the burn!
+    </p>
+  </li>
+  <li>
+    <h3>
+      nipper (NL, NH)whatever (AF+, AC, AFe+)
+    </h3>
+    <p>
+      Annalise
+    </p>
+    <p>
+      Let gossip in one ear and out the other.
+    </p>
+  </li>
+  <li>
+    <h3>
+      snorty
+    </h3>
+    <p>
+      Anabelle
+    </p>
+    <p>
+      Dance like no one's watching!
+    </p>
+  </li>
+  <li>
+    <h3>
+      pah
+    </h3>
+    <p>
+      Apollo
+    </p>
+    <p>
+      What goes up must come down.
+    </p>
+  </li>
+  <li>
+    <h3>
+      chuurp
+    </h3>
+    <p>
+      Anchovy
+    </p>
+    <p>
+      Why do today what you can put off until tomorrow?
+    </p>
+  </li>
+  <li>
+    <h3>
+      cheekers
+    </h3>
+    <p>
+      Apple
+    </p>
+    <p>
+      One rotten apple spoils the barrel!
+    </p>
+  </li>
+  <li>
+    <h3>
+      my pet
+    </h3>
+    <p>
+      Astrid
+    </p>
+    <p>
+      An apple doesn't fall far from the tree.
+    </p>
+  </li>
+  <li>
+    <h3>
+      foxtrot
+    </h3>
+    <p>
+      Audie
+    </p>
+    <p>
+      Be the kind of person your future self won't regret having been
+    </p>
+  </li>
+  <li>
+    <h3>
+      b-b-baby
+    </h3>
+    <p>
+      Aurora
+    </p>
+    <p>
+      Always keep your cool.
+    </p>
+  </li>
+  <li>
+    <h3>
+      skree-haw
+    </h3>
+    <p>
+      Avery
+    </p>
+    <p>
+      What goes around comes around.
+    </p>
+  </li>
+  <li>
+    <h3>
+      beaker
+    </h3>
+    <p>
+      Ava
+    </p>
+    <p>
+      Early to bed, early to rise.
+    </p>
+  </li>
+  <li>
+    <h3>
+      cubby
+    </h3>
+    <p>
+      Barold
+    </p>
+    <p>
+      Please DO feed the bears!
+    </p>
+  </li>
+  <li>
+    <h3>
+      growf
+    </h3>
+    <p>
+      Bangle
+    </p>
+    <p>
+      Don't blink or you'll miss it.
+    </p>
+  </li>
+</ul>
+`;
+
+exports[`News search component renders news search page 2`] = `
+<button
+  aria-label="form-submit"
+>
+  Search
+</button>
+`;
+
+exports[`News search component renders news search page 3`] = `
+<form
+  aria-label="article-search"
+  class="searchForm"
+>
+  <input
+    aria-label="search-input"
+    placeholder="Enter search terms"
+    value=""
+  />
+  <button
+    aria-label="form-submit"
+  >
+    Search
+  </button>
+</form>
+`;
